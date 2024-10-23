@@ -100,14 +100,18 @@ const deleteMovie = (req, res) => {
 // app.patch('/api/v1/movies/:id', updateMovie)
 // app.delete('/api/v1/movies/:id', deleteMovie)
 
-app.route('/api/v1/movies')
+const router = express.Router();
+
+router.route('/')
     .get(getAllMovies)
     .post(createMovie)
 
-app.route('/api/v1/movies/:id')
+router.route('/:id')
     .get(getMovie)
     .patch(updateMovie)
     .delete(deleteMovie)
+
+app.use('/api/v1/movies',router)
 
 const port = 3000;
 app.listen(port, () => {
