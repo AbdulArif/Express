@@ -10,6 +10,7 @@ app.use((req, res, next) => {
     req.requestedAt = new Date().toISOString();
     next();
 })
+// using route
 app.use('/api/v1/movies', moviesRouter)
 
 
