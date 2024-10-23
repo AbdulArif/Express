@@ -12,11 +12,6 @@ app.use((req, res, next) => {
 })
 // using route
 app.use('/api/v1/movies', moviesRouter)
+module.exports = app;
 
-
-const port = 3000;
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-
-})
 
