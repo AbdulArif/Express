@@ -11,13 +11,6 @@ app.use((req, res, next) => {
     next();
 })
 
-// app.get('/api/v1/movies', getAllMovies)
-// app.post('/api/v1/movies', createMovie)
-// app.get('/api/v1/movies/:id', getMovie)
-// app.patch('/api/v1/movies/:id', updateMovie)
-// app.delete('/api/v1/movies/:id', deleteMovie)
-
-
 app.use('/api/v1/movies', moviesRouter)
 
 
