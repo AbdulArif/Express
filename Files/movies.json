@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "RAZ_1",
+        "duration": 600
+    },
+    {
+        "id": 2,
+        "name": "RAZ 2",
+        "duration": 100
+    },
+    {
+        "id": 3,
+        "name": "RAZ 3",
+        "duration": 60
+    }
+]
