@@ -5,6 +5,7 @@ const moviesRouter = require('./Routes/moviesRoutes.js')
 let app = express();
 app.use(express.json())
 app.use(morgan('dev'))
+app.use(express.static('./public'))
 // custom middleware
 app.use((req, res, next) => {
     req.requestedAt = new Date().toISOString();
