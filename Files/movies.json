@@ -1,1 +1,17 @@
-[{"id":1,"name":"RAZ_1","duration":600},{"id":2,"name":"RAZ 2","duration":100},{"id":3,"name":"Test abc","duration":100},{"id":4,"duration":100},{"id":5,"name":"Test xyz"},{"id":6,"name":"Test xyz"}]
+[
+    {
+        "id": 1,
+        "name": "RAZ_1",
+        "duration": 600
+    },
+    {
+        "id": 2,
+        "name": "RAZ 2",
+        "duration": 100
+    },
+    {
+        "id": 3,
+        "name": "Test abc",
+        "duration": 100
+    }
+]
