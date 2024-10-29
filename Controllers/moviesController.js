@@ -14,6 +14,16 @@ exports.checkId = (req, res, next, value) => {
     next();
 }
 
+exports.validateBody = (req, res, next, value) => {
+    if (!req.body.duration || !req.body.name) {
+            return res.status(400).json({
+                status: 'fail',
+                message: 'NoT Valid Movie Data'
+            })
+    }
+    next();
+}
+
 exports.getAllMovies = (req, res) => {
     res.status(200).json(
         {
@@ -47,10 +57,10 @@ exports.getMovie = (req, res) => {
 
     //res.send('Test success');
     // if (movie) {
-        res.status(200).json({
-            status: 'success',
-            data: { movie }
-        })
+    res.status(200).json({
+        status: 'success',
+        data: { movie }
+    })
     // }
     // else {
     //     res.status(404).json({
