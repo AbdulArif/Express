@@ -2,10 +2,7 @@ const express = require('express');
 const router = express.Router();
 const moviesController = require('./../Controllers/moviesController')
 
-router.param('id', (req, res, next, value) => {
-    console.log('Movies id is ' + value)
-    next();
-})
+router.param('id', moviesController.checkId)
 
 router.route('/')
     .get(moviesController.getAllMovies)
